@@ -1,5 +1,11 @@
+import Header from "./features/header/header.component";
+
 function App() {
-  return <div>hello website</div>;
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 }
 
 export default App;

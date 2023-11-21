@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  background-color: #445d48;
+}
+
+.homePage {
+  color: white;
+  font-size: x-large;
+  padding-left: 10px;
+}
+
+.cart {
+  background-color: #445d48;
+  color: white;
+  font-size: x-large;
+  padding-right: 10px;
+}
+
+/* .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
