@@ -1,0 +1,59 @@
+body {
+  background-color: brown;
+}
+
+.mainDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 70px;
+  position: relative;
+}
+
+.beauty {
+  width: 500px;
+  height: 500px;
+  margin-top: 70px;
+  background-color: white;
+}
+.toys {
+  width: 500px;
+  height: 500px;
+  margin-top: 70px;
+  background-color: white;
+}
+
+.gifts {
+  margin-top: 70px;
+  width: 500px;
+  height: 500px;
+  background-color: white;
+}
+
+h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+}
+
+.beauty-img {
+  width: 400px;
+  height: 300px;
+}
+.toys-img {
+  width: 400px;
+  height: 300px;
+}
+
+.gift-img {
+  width: 400px;
+  height: 300px;
+}
