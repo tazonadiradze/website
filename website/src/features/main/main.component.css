@@ -8,7 +8,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 70px;
-  position: relative;
 }
 
 .beauty {
@@ -35,6 +34,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 16px;
 }
 
 .button-div {
@@ -45,15 +45,15 @@ h4 {
 }
 
 .beauty-img {
-  width: 400px;
-  height: 300px;
+  width: 500px;
+  height: 400px;
 }
 .toys-img {
-  width: 400px;
-  height: 300px;
+  width: 500px;
+  height: 400px;
 }
 
 .gift-img {
-  width: 400px;
-  height: 300px;
+  width: 500px;
+  height: 400px;
 }
