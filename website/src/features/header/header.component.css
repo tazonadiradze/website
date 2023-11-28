@@ -1,9 +1,9 @@
 .header {
+  height: 80px;
+  background-color: #445d48;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
-  background-color: #445d48;
 }
 
 .homePage {
@@ -13,34 +13,32 @@
 }
 
 .cart {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   background-color: #445d48;
   color: white;
   font-size: x-large;
   padding-right: 10px;
+  position: relative; /* Ensure relative positioning for absolute child */
 }
-
-/* .search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-a {
-  text-decoration: none;
-}
-
-/* Add this to your CSS file */
 
 .cart-inside {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   width: 450px;
   height: 400px;
   background-color: #f8f8f8;
   border: 1px solid #ccc;
-  margin-top: 480px;
-
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  position: absolute; /* Position absolutely within the relative parent */
+  top: 8%;
+  left: 88.9%;
+
+  transform: translateX(-50%); /* Center horizontally */
 
   color: #333;
   font-size: 16px;
