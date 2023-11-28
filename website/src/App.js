@@ -1,9 +1,12 @@
 import Header from "./features/header/header.component";
+import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import Toys from "./features/products/toys/toys-component";
 import Gifts from "./features/products/gifts/gifts";
 import Beauty from "./features/products/beautyproducts/beauty";
 import Main from "./features/main/main.component";
+
+import IMG from "./assets/sales.jpg";
 
 function App() {
   return (
@@ -20,5 +23,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

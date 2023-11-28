@@ -1,5 +1,9 @@
 body {
-  background-color: brown;
+  background-color: white;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .mainDiv {
@@ -11,22 +15,22 @@ body {
 }
 
 .beauty {
-  width: 500px;
-  height: 500px;
+  width: 150px;
+  height: 150px;
   margin-top: 70px;
   background-color: white;
 }
 .toys {
-  width: 500px;
-  height: 500px;
+  width: 150px;
+  height: 150px;
   margin-top: 70px;
   background-color: white;
 }
 
 .gifts {
   margin-top: 70px;
-  width: 500px;
-  height: 500px;
+  width: 150px;
+  height: 150px;
   background-color: white;
 }
 
@@ -45,15 +49,19 @@ h4 {
 }
 
 .beauty-img {
-  width: 500px;
-  height: 400px;
+  width: 150px;
+  height: 150px;
 }
 .toys-img {
-  width: 500px;
-  height: 400px;
+  width: 150px;
+  height: 150px;
 }
 
 .gift-img {
-  width: 500px;
-  height: 400px;
+  width: 150px;
+  height: 150px;
+}
+
+.sales {
+  color: whitesmoke;
 }
