@@ -4,71 +4,81 @@
       "id": 1,
       "name": "Product 1",
       "description": "Description for Product 1",
-      "price": 29.99,
-      "image": "https://i.pinimg.com/564x/2b/fc/29/2bfc29d683b67a7f4c233a2b8d3d4257.jpg"
+      "price": 29.0,
+      "image": "https://i.pinimg.com/564x/2b/fc/29/2bfc29d683b67a7f4c233a2b8d3d4257.jpg",
+      "quantity": 1
     },
     {
       "id": 2,
       "name": "Product 2",
       "description": "Description for Product 2",
-      "price": 34.99,
-      "image": "https://i.pinimg.com/564x/6d/36/1c/6d361c1f45f071e4f8a6c9aa69824a10.jpg"
+      "price": 34.0,
+      "image": "https://i.pinimg.com/564x/6d/36/1c/6d361c1f45f071e4f8a6c9aa69824a10.jpg",
+      "quantity": 1
     },
     {
       "id": 3,
       "name": "Product 3",
       "description": "Description for Product 3",
-      "price": 24.99,
-      "image": "https://i.pinimg.com/564x/fe/9f/c5/fe9fc53618e47885bf815cb9a2699b75.jpg"
+      "price": 24.0,
+      "image": "https://i.pinimg.com/564x/fe/9f/c5/fe9fc53618e47885bf815cb9a2699b75.jpg",
+      "quantity": 1
     },
     {
       "id": 4,
       "name": "Product 4",
       "description": "Description for Product 4",
-      "price": 39.99,
-      "image": "https://i.pinimg.com/564x/03/3c/45/033c45df2fa99bd56f69ae4907e73bc8.jpg"
+      "price": 39.0,
+      "image": "https://i.pinimg.com/564x/03/3c/45/033c45df2fa99bd56f69ae4907e73bc8.jpg",
+      "quantity": 1
     },
     {
       "id": 5,
       "name": "Product 5",
       "description": "Description for Product 5",
-      "price": 19.99,
-      "image": "https://i.pinimg.com/736x/eb/30/34/eb3034233366994e38bb6ad2e5981180.jpg"
+      "price": 19.0,
+      "image": "https://i.pinimg.com/736x/eb/30/34/eb3034233366994e38bb6ad2e5981180.jpg",
+      "quantity": 1
     },
     {
       "id": 6,
       "name": "Product 6",
       "description": "Description for Product 6",
-      "price": 44.99,
-      "image": "https://i.pinimg.com/564x/49/4f/f0/494ff00044a9552ae670522be1aefd3f.jpg"
+      "price": 44.0,
+      "image": "https://i.pinimg.com/564x/49/4f/f0/494ff00044a9552ae670522be1aefd3f.jpg",
+      "quantity": 1
     },
     {
       "id": 7,
       "name": "Product 7",
       "description": "Description for Product 7",
-      "price": 29.99,
-      "image": "https://i.pinimg.com/236x/02/03/f0/0203f01d35d90a912d999ffc2d5bd358.jpg"
+      "price": 29.0,
+      "image": "https://i.pinimg.com/236x/02/03/f0/0203f01d35d90a912d999ffc2d5bd358.jpg",
+      "quantity": 1
     },
     {
       "id": 8,
       "name": "Product 8",
       "description": "Description for Product 8",
-      "price": 54.99,
-      "image": "https://i.pinimg.com/564x/a7/d6/9e/a7d69e31032ea2e287a970967c0a6453.jpg"
+      "price": 54.0,
+      "image": "https://i.pinimg.com/564x/a7/d6/9e/a7d69e31032ea2e287a970967c0a6453.jpg",
+      "quantity": 1
     },
     {
       "id": 9,
       "name": "Product 9",
       "description": "Description for Product 9",
-      "price": 22.99,
-      "image": "https://i.pinimg.com/564x/0e/52/6b/0e526bf87161d7b85c5b8097b41b7f8e.jpg"
+      "price": 22.0,
+      "image": "https://i.pinimg.com/564x/0e/52/6b/0e526bf87161d7b85c5b8097b41b7f8e.jpg",
+      "quantity": 1
     },
     {
       "id": 10,
       "name": "Product 10",
       "description": "Description for Product 10",
-      "price": 49.99,
-      "image": "https://i.pinimg.com/564x/7f/6d/5b/7f6d5b00520e3e1499873b3dbd700894.jpg"
+      "price": 49.0,
+      "image": "https://i.pinimg.com/564x/7f/6d/5b/7f6d5b00520e3e1499873b3dbd700894.jpg",
+      "quantity": 1
     }
   ]
 }

@@ -1,50 +1,124 @@
+/* header.component.css */
+
 .header {
-  height: 80px;
-  background-color: #445d48;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
 }
 
 .homePage {
-  color: white;
-  font-size: x-large;
-  padding-left: 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
 }
 
 .cart {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  background-color: #445d48;
-  color: white;
-  font-size: x-large;
-  padding-right: 10px;
-  position: relative; /* Ensure relative positioning for absolute child */
-}
-
-.cart-inside {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  width: 450px;
-  height: 400px;
-  background-color: #f8f8f8;
-  border: 1px solid #ccc;
-  border-radius: 5px;
   cursor: pointer;
+  padding: 10px 20px;
+  background-color: #f50057;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
   transition: background-color 0.3s ease;
-  position: absolute; /* Position absolutely within the relative parent */
-  top: 8%;
-  left: 88.9%;
-
-  transform: translateX(-50%); /* Center horizontally */
-
-  color: #333;
-  font-size: 16px;
-  text-align: center;
 }
 
 .cart:hover {
-  background-color: green;
+  background-color: #e91e63;
+}
+
+.cart-inside {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+
+  width: 300px;
+  max-height: 80vh; /* Set maximum height to 80% of the viewport height */
+  overflow-y: auto; /* Add vertical scrollbar if content exceeds max height */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border-radius: 5px;
+  color: black;
+}
+
+.cart-image {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+.product-details {
+  display: flex;
+  align-items: center;
+}
+
+.products {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity {
+  font-size: 1.2rem;
+  color: black;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  cursor: pointer;
+  padding: 10px 15px;
+  color: #fff;
+  color: black;
+
+  border: none;
+  border-radius: 8px;
+  font-size: 2rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+}
+
+.button:active {
+  transform: translateY(2px); /* Slight upward movement when clicked */
+}
+
+.total-price {
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: black;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+  .cart-inside {
+    width: 100%;
+    top: 60px;
+    right: 0;
+    padding: 15px;
+  }
 }

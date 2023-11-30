@@ -1,9 +1,16 @@
 import React from "react";
 import axios from "axios";
 import "./beauty.css";
+
+import { useDispatch, useSelector } from "react-redux";
+import { addItemInCart } from "../../cart/cart-slice";
 import { useEffect, useState } from "react";
 
 export default function Beauty() {
+  const dispatch = useDispatch();
+  const addtoCarthandler = (item) => {
+    dispatch(addItemInCart(item));
+  };
   const [data, setData] = useState([]);
   useEffect(() => {
     axios
@@ -19,7 +26,7 @@ export default function Beauty() {
             {each.name}
             <div>{each.price}</div>
             <img className="img" src={each.image} />
-            <button>add</button>
+            <button onClick={() => addtoCarthandler(each)}>add</button>
           </div>
         );
       })}
