@@ -11,7 +11,6 @@ const cartSlice = createSlice({
     showDivHandler(state) {
       state.showDiv = true;
     },
-
     addItemInCart(state, action) {
       const { id, quantity, price } = action.payload;
 
@@ -24,7 +23,7 @@ const cartSlice = createSlice({
       }
     },
     removeFromCart(state, action) {
-      const { id, quantity } = action.payload;
+      const { id } = action.payload;
       const item = state.cart.find((item) => item.id === id);
       if (item) {
         if (item.quantity === 1) {
@@ -38,7 +37,7 @@ const cartSlice = createSlice({
       const { id } = action.payload;
       const plusitem = state.cart.find((item) => item.id === id);
       if (plusitem) {
-        plusitem.quantity += 1;
+        plusitem.quantity++;
       }
     },
   },

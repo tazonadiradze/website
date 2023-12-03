@@ -2,80 +2,80 @@
   "beautyProducts": [
     {
       "id": 1,
-      "name": "Product 1",
-      "description": "Description for Product 1",
+      "name": "Natural Glow Serum",
+      "description": "Restore your skin's radiance with our Natural Glow Serum. Packed with antioxidants and nourishing ingredients, this serum is your secret to healthy, glowing skin.",
       "price": 29.0,
       "image": "https://i.pinimg.com/564x/2b/fc/29/2bfc29d683b67a7f4c233a2b8d3d4257.jpg",
       "quantity": 1
     },
     {
       "id": 2,
-      "name": "Product 2",
-      "description": "Description for Product 2",
+      "name": "Silky Smooth Moisturizer",
+      "description": "Indulge your skin with our Silky Smooth Moisturizer. Enriched with hydrating elements, this moisturizer keeps your skin soft, supple, and beautifully moisturized.",
       "price": 34.0,
       "image": "https://i.pinimg.com/564x/6d/36/1c/6d361c1f45f071e4f8a6c9aa69824a10.jpg",
       "quantity": 1
     },
     {
       "id": 3,
-      "name": "Product 3",
-      "description": "Description for Product 3",
+      "name": "Revitalizing Clay Mask",
+      "description": "Revitalize your skin with our Revitalizing Clay Mask. Formulated with natural clays and botanical extracts, it detoxifies and rejuvenates, leaving your skin feeling refreshed.",
       "price": 24.0,
       "image": "https://i.pinimg.com/564x/fe/9f/c5/fe9fc53618e47885bf815cb9a2699b75.jpg",
       "quantity": 1
     },
     {
       "id": 4,
-      "name": "Product 4",
-      "description": "Description for Product 4",
+      "name": "Youthful Radiance Cream",
+      "description": "Experience the magic of our Youthful Radiance Cream. Infused with anti-aging ingredients, this cream reduces fine lines and wrinkles, giving you a youthful and radiant complexion.",
       "price": 39.0,
       "image": "https://i.pinimg.com/564x/03/3c/45/033c45df2fa99bd56f69ae4907e73bc8.jpg",
       "quantity": 1
     },
     {
       "id": 5,
-      "name": "Product 5",
-      "description": "Description for Product 5",
+      "name": "Energizing Eye Serum",
+      "description": "Awaken your eyes with our Energizing Eye Serum. Specially formulated to reduce puffiness and dark circles, this serum leaves your eyes looking bright and refreshed.",
       "price": 19.0,
       "image": "https://i.pinimg.com/736x/eb/30/34/eb3034233366994e38bb6ad2e5981180.jpg",
       "quantity": 1
     },
     {
       "id": 6,
-      "name": "Product 6",
-      "description": "Description for Product 6",
+      "name": "Hydrating Rose Mist",
+      "description": "Hydrate and refresh your skin with our Hydrating Rose Mist. Infused with pure rose water, this mist revitalizes and tones, giving you a dewy and glowing complexion.",
       "price": 44.0,
       "image": "https://i.pinimg.com/564x/49/4f/f0/494ff00044a9552ae670522be1aefd3f.jpg",
       "quantity": 1
     },
     {
       "id": 7,
-      "name": "Product 7",
-      "description": "Description for Product 7",
+      "name": "Soothing Lavender Balm",
+      "description": "Relax your senses with our Soothing Lavender Balm. Enriched with lavender essential oil, this balm calms and moisturizes, providing a soothing experience for your skin.",
       "price": 29.0,
       "image": "https://i.pinimg.com/236x/02/03/f0/0203f01d35d90a912d999ffc2d5bd358.jpg",
       "quantity": 1
     },
     {
       "id": 8,
-      "name": "Product 8",
-      "description": "Description for Product 8",
+      "name": "Luxurious Gold Elixir",
+      "description": "Indulge in luxury with our Luxurious Gold Elixir. Infused with gold particles and potent antioxidants, this elixir nourishes and rejuvenates, giving you a radiant and golden glow.",
       "price": 54.0,
       "image": "https://i.pinimg.com/564x/a7/d6/9e/a7d69e31032ea2e287a970967c0a6453.jpg",
       "quantity": 1
     },
     {
       "id": 9,
-      "name": "Product 9",
-      "description": "Description for Product 9",
+      "name": "Balancing Tea Tree Cleanser",
+      "description": "Achieve balance with our Balancing Tea Tree Cleanser. Formulated with tea tree oil and botanical extracts, it cleanses and purifies, leaving your skin feeling refreshed and clear.",
       "price": 22.0,
       "image": "https://i.pinimg.com/564x/0e/52/6b/0e526bf87161d7b85c5b8097b41b7f8e.jpg",
       "quantity": 1
     },
     {
       "id": 10,
-      "name": "Product 10",
-      "description": "Description for Product 10",
+      "name": "Radiant Orchid Eau de Parfum",
+      "description": "Unveil your radiance with our Radiant Orchid Eau de Parfum. A captivating blend of floral notes, this fragrance enhances your aura and leaves a lasting impression.",
       "price": 49.0,
       "image": "https://i.pinimg.com/564x/7f/6d/5b/7f6d5b00520e3e1499873b3dbd700894.jpg",
       "quantity": 1

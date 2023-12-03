@@ -10,8 +10,9 @@ export default function Header() {
   const showDiv = useSelector((state) => state.cart.showDiv);
 
   const data = useSelector((state) => state.cart.cart);
+
   const dispatch = useDispatch();
-  console.log(data);
+
   const cartHandler = () => {
     dispatch(showDivHandler());
   };
@@ -32,6 +33,7 @@ export default function Header() {
       <Link to="/">
         <div className="homePage">Amazon</div>
       </Link>
+
       <div onClick={cartHandler} className="cart">
         cart
       </div>

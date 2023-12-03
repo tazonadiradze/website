@@ -1,67 +1,39 @@
-body {
-  background-color: white;
-}
-a {
-  text-decoration: none;
-  color: black;
-}
-
 .mainDiv {
   display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
   justify-content: center;
+  gap: 80px;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 70px;
+  margin: 50px;
 }
 
-.beauty {
-  width: 150px;
-  height: 150px;
-  margin-top: 70px;
-  background-color: white;
-}
-.toys {
-  width: 150px;
-  height: 150px;
-  margin-top: 70px;
-  background-color: white;
+.category {
+  position: relative;
+  overflow: hidden;
+  width: 250px;
+  margin: 10px; /* Adjust the margin to add space between items */
+  transition: transform 0.3s ease;
 }
 
-.gifts {
-  margin-top: 70px;
-  width: 150px;
-  height: 150px;
-  background-color: white;
+.category:hover {
+  transform: scale(1.05);
 }
 
-h4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
+.category-img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
-.button-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: red;
+.ad {
+  width: 81%; /* Make sure the ad takes the full width of the container */
+  border: 1px solid white;
+
+  margin-top: 100px; /* Adjust the margin to add space between the last category and the ad */
 }
 
-.beauty-img {
-  width: 150px;
-  height: 150px;
-}
-.toys-img {
-  width: 150px;
-  height: 150px;
-}
-
-.gift-img {
-  width: 150px;
-  height: 150px;
-}
-
-.sales {
-  color: whitesmoke;
+.ad img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }

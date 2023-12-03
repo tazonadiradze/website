@@ -24,7 +24,8 @@ export default function Beauty() {
         return (
           <div className="container" key={i}>
             {each.name}
-            <div>{each.price}</div>
+            <div>{each.description}</div>
+            <div>${each.price}</div>
             <img className="img" src={each.image} />
             <button onClick={() => addtoCarthandler(each)}>add</button>
           </div>
