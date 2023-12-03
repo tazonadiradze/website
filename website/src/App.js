@@ -12,8 +12,9 @@ function App() {
       <Header />
       <Route>
         <Switch>
-          <Route path="/" exact component={Main} />
-          <Route path="/signin" component={SignIn} />
+          <Route path="/" exact component={SignIn} />
+          <Route path="/main" exact component={Main} />
+
           <Route path="/Toys" component={Toys} />
           <Route path="/Gifts" component={Gifts} />
           <Route path="/Beauty" component={Beauty} />
