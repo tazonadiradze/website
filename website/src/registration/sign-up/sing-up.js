@@ -1,9 +1,11 @@
-import React from "react";
 import { useState } from "react";
+import "./signUp.css";
+
 import {
   createAuthUserWithEmailAndPassword,
   createUserDocumentFromAuth,
 } from "../../utils/firebase";
+
 const defaultFormFields = {
   displayName: "",
   email: "",
@@ -14,6 +16,8 @@ const defaultFormFields = {
 export default function SignUp() {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { displayName, email, password, confirmPassword } = formFields;
+
+  console.log(formFields, "formfields");
 
   const resetFormFileds = () => {
     setFormFields(defaultFormFields);
@@ -36,14 +40,15 @@ export default function SignUp() {
       );
 
       await createUserDocumentFromAuth(user, { displayName });
+
       resetFormFileds();
     } catch (error) {
       console.log("user creation  encountered an error ", error);
     }
   };
+
   return (
-    <div>
-      <h1>this is sign up form </h1>
+    <div className="signup-container ">
       <form onSubmit={handleSubmit}>
         <label>Display name </label>
         <input
@@ -77,7 +82,9 @@ export default function SignUp() {
           name="confirmPassword"
           value={confirmPassword}
         />
-        <button type="submit">Sign Up !</button>
+        <button className="submit-button" type="submit">
+          Sign Up !
+        </button>
       </form>
     </div>
   );

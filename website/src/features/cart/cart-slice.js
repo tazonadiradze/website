@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   showDiv: false,
   cart: [],
+  showRegister: false,
 };
 const cartSlice = createSlice({
   name: "cart",
@@ -10,6 +11,13 @@ const cartSlice = createSlice({
   reducers: {
     showDivHandler(state) {
       state.showDiv = true;
+    },
+    closeDivHandler(state) {
+      state.showDiv = false;
+    },
+
+    hideDivHandler(state) {
+      state.showDiv = false;
     },
     addItemInCart(state, action) {
       const { id, quantity, price } = action.payload;
@@ -40,6 +48,13 @@ const cartSlice = createSlice({
         plusitem.quantity++;
       }
     },
+
+    loginOpenFunc(state) {
+      state.showRegister = true;
+    },
+    loginCloseFunc(state) {
+      state.showRegister = false;
+    },
   },
 });
 
@@ -48,5 +63,9 @@ export const {
   addItemInCart,
   removeFromCart,
   incrementQuantity,
+  hideDivHandler,
+  loginCloseFunc,
+  loginOpenFunc,
+  closeDivHandler,
 } = cartSlice.actions;
 export default cartSlice.reducer;

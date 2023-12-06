@@ -1,9 +1,11 @@
 /* signIn.css */
 
-.signIn-container {
+.signup-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 400px;
-  padding: 30px;
+  padding: 40px;
   border: 1px solid #e1e1e1;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -38,6 +40,7 @@ input {
 
 input:focus {
   border-color: #007bff;
+  outline: none; /* Remove default focus outline */
 }
 
 button {

@@ -1,74 +1,62 @@
 import React from "react";
 import "./header.component.css";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import { incrementQuantity } from "../cart/cart-slice";
-import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
-import { showDivHandler } from "../cart/cart-slice";
-import { removeFromCart } from "../cart/cart-slice";
+import Cart from "../cart/cart.component";
+import { AuthComponent } from "../auth/auth.component";
+import { loginOpenFunc } from "../cart/cart-slice";
+import { useSelector } from "react-redux";
+import { showPersonalInfo } from "../auth/auth";
+import { signOutFunc } from "../auth/auth";
+
 export default function Header() {
-  const showDiv = useSelector((state) => state.cart.showDiv);
-
-  const data = useSelector((state) => state.cart.cart);
-
+  const isShowPersonalTrue = useSelector((state) => state.auth.showPersonal);
+  const isAuthenticated = useSelector((state) => state.auth.authenticated);
   const dispatch = useDispatch();
 
-  const cartHandler = () => {
-    dispatch(showDivHandler());
+  const showLogIn = () => {
+    dispatch(loginOpenFunc());
   };
 
-  const incrementFunc = (id) => {
-    dispatch(incrementQuantity({ id }));
+  const showPersonalPage = () => {
+    dispatch(showPersonalInfo());
   };
 
-  const removeHandler = (id) => {
-    dispatch(removeFromCart({ id }));
+  const signOut = () => {
+    dispatch(signOutFunc());
   };
-  const totalPrice = data.reduce(
-    (total, each) => total + each.price * each.quantity,
-    0
-  );
+
   return (
-    <header className="header">
+    <div className="header">
       <Link to="/">
         <div className="homePage">Amazon</div>
       </Link>
 
-      <div onClick={cartHandler} className="cart">
-        cart
-      </div>
-      {showDiv && (
-        <div className="cart-inside">
-          CART
-          <hr />
-          {data.map((each, i) => {
-            return (
-              <div key={i} className="div">
-                <img className="cart-image" src={each.image} />
-                <div className="product-details">
-                  <div className="products">{each.name}</div>
-                  <div className="products">${each.price}</div>
+      {isAuthenticated ? (
+        <div onClick={showPersonalPage} className="auth-login">
+          my wall
+        </div>
+      ) : (
+        <button className="auth-login" onClick={showLogIn}>
+          log in
+        </button>
+      )}
 
-                  <div
-                    className="button"
-                    onClick={() => removeHandler(each.id)}
-                  >
-                    -
-                  </div>
-                  <div className="quantity">{each.quantity}</div>
-                  <div
-                    className="button"
-                    onClick={() => incrementFunc(each.id)}
-                  >
-                    +
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-          <div className="total-price"> Total Price ${totalPrice}</div>
+      <div className="cart-header">
+        <Cart />
+      </div>
+
+      <AuthComponent />
+
+      {isShowPersonalTrue && (
+        <div className="mainInfoDiv">
+          {
+            <div className="info ">
+              hello {<button onClick={signOut}>sign Out</button>}
+            </div>
+          }
         </div>
       )}
-    </header>
+    </div>
   );
 }
